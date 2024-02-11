@@ -1,6 +1,6 @@
 
 public class TicTacToe {
-    char[][] board;
+    static char[][] board;
 
     public TicTacToe(){
        board = new char[3][3];
@@ -32,7 +32,7 @@ public class TicTacToe {
 
     }
 
-    void placeMark(int row, int col, char mark){
+    static void placeMark(int row, int col, char mark){
         if(row >=0 && row <= 2 && col >=0 && col <=2){
             board[row][col] = mark;
         }
